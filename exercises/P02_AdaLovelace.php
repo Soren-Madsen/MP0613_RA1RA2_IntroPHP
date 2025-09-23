@@ -1,7 +1,9 @@
 <?php
 
-class P02_AdaLoveLace {
-    public function main() {
-        // Write your program here
+class P02_AdaLoveLace
+{
+    public function main()
+    {
+        echo "Ada Lovelace";
     }
 }

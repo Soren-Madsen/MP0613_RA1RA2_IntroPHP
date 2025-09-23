@@ -7,6 +7,8 @@ class P11_AverageOfTwoNumbers {
         $numB = 15;
 
         // Output the formula and result
-        // Write the program here
+        $average = ($numA + $numB) / 2;
+
+        echo "The average is $average\n";
     }
 }
