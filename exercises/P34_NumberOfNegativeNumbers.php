@@ -1,10 +1,23 @@
 <?php
-
 class P34_NumberOfNegativeNumbers
 {
     public function main(): void
     {
-        // Write your code here
-       
+        $negativeCount = 0;
+        
+        while (true) {
+            $input = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
+            $number = (int) $input;
+            
+            if ($number === 0) {
+                break;
+            }
+            
+            if ($number < 0) {
+                $negativeCount++;
+            }
+        }
+        
+        echo "Number of negative numbers: " . $negativeCount . "\n";
     }
 }
