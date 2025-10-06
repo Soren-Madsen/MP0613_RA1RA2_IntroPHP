@@ -8,7 +8,7 @@ class P45_IndexWasNotFound
         $array = [6, 2, 8, 1, 3, 0, 9, 7];
 
         // Read input from user
-        $searchValue = (int)trim(fgets(STDIN));
+        $searchValue = (int)trim(fgets($GLOBALS['STDIN'] ?? STDIN));
         
         // Search for the value in the array
         $index = array_search($searchValue, $array, true);
